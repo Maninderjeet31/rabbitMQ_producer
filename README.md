@@ -19,7 +19,16 @@
  4.  Test on postman with url
        a. Welcome page - " *http://localhost:8080/api/welcome* "
 
-       b. Afgter clicking *send message* button or using url " *http://localhost:8080/api/home* "
+       b. After clicking *send message* button or using url " *http://localhost:8080/api/home* "
+
+           Sample JSON example to send :
+
+               {
+                   "fName": "John",
+                   "lName": "Doe",
+                   "city": "Toronto",
+                   "age": 60
+               }
 
        c. After filling details in form and pressing send, you will receive user details on consumer-end (rabbitMQ_consumer repository).
 
